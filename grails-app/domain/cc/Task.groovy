@@ -5,9 +5,15 @@ import groovy.transform.ToString
 // AST (abstract syntax tree)
 @ToString
 class Task {
-
+	
+	public static final int MIN_PRIORITY = 1
+	public static final int MAX_PRIORITY = 5
+	public static final int DEFAULT_PRIORITY = 3
+	
+	static belongsTo = [quest:Quest]
+	
 	String name
-	int priority = 3
+	int priority = DEFAULT_PRIORITY
 	Date startDate = new Date()
 	Date endDate = new Date()
 	boolean completed
@@ -27,7 +33,7 @@ class Task {
 	 */
     static constraints = {
 		name blank:false
-		priority range:1..5
+		priority range:MIN_PRIORITY..MAX_PRIORITY
 		startDate()
     		endDate validator: { 
 			value, Task task -> value >= task.startDate

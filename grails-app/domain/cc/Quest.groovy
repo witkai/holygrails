@@ -1,6 +1,8 @@
 package cc
 
 class Quest {
+	
+	static hasMany = [tasks:Task]
 
 	String name
 	Date dateCreated

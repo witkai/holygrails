@@ -1,6 +1,6 @@
 package cc
 
 class TaskController {
-
-    static scaffold = Task
+	// true or Task both work
+    static scaffold = true
 }
