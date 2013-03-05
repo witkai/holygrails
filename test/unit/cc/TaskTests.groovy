@@ -34,19 +34,19 @@ class TaskTests {
 	}
 	
 	void testPriorityTooLow() {
-		task.priority = 0
+		task.priority = Task.MIN_PRIORITY - 1
 		assert !task.validate()
 		assert 'range' == task.errors.priority
 	}
 	
 	void testPriorityTooHigh() {
-		task.priority = 6
+		task.priority = Task.MAX_PRIORITY + 1
 		assert !task.validate()
 		assert 'range' == task.errors.priority
 	}
 	
 	void testPriorityOK() {
-		(1..5).each { p ->
+		(Task.MIN_PRIORITY..Task.MAX_PRIORITY).each { p ->
 			task.priority = p
 			assert task.validate()
 		}
