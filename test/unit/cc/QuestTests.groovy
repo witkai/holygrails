@@ -9,7 +9,7 @@ import org.junit.*
 @TestFor(Quest)
 class QuestTests {
 
-	Quest quest = new Quest(name:'Quest no. 1')
+	Quest quest = new Quest(name:'q0')
 	
 	@Before
 	void setup() {
@@ -23,6 +23,6 @@ class QuestTests {
 	void testBlankName() {
 		quest.name = ''
 		assert !quest.validate()
-		assert 'blank' == quest.errors['name']
+		assert 'blank' == quest.errors['name'] // or errors.name
 	}
 }

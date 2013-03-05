@@ -13,4 +13,5 @@ class Quest {
 	String toString() {
 		name
 	}
+	
 }
