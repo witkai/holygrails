@@ -12,21 +12,6 @@ class Task {
 	
 	static belongsTo = [quest:Quest]
 	
-	String name
-	int priority = DEFAULT_PRIORITY
-	Date startDate = new Date()
-	Date endDate = new Date()
-	boolean completed
-	
-	/**
-	 * Calculate the duration based on start and end dates.
-	 * 
-	 * @return Duration of Task in days
-	 */
-	int getDuration() {
-		endDate - startDate + 1
-	}
-	
 	/**
 	 * Order in constraints defines order in scaffolded HTML form.
 	 * Default is alphabetical (e.g. endDate, startDate)
@@ -47,5 +32,20 @@ class Task {
 	static transients = {
 		['duration']
 	}	
+
+	String name
+	int priority = DEFAULT_PRIORITY
+	Date startDate = new Date()
+	Date endDate = new Date()
+	boolean completed
+	
+	/**
+	 * Calculate the duration based on start and end dates.
+	 * 
+	 * @return Duration of Task in days
+	 */
+	int getDuration() {
+		endDate - startDate + 1
+	}
 	
 }

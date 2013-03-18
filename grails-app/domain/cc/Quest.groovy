@@ -4,13 +4,13 @@ class Quest {
 	
 	static hasMany = [tasks:Task]
 
+	static constraints = {
+		name blank:false
+	}
+
 	String name
 	Date dateCreated
 	Date lastUpdated
-	
-    static constraints = {
-		name blank:false
-    }
 	
 	String toString() {
 		name
