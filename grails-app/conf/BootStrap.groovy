@@ -1,5 +1,3 @@
-import org.junit.internal.runners.statements.FailOnTimeout;
-
 import cc.*
 
 class BootStrap {
