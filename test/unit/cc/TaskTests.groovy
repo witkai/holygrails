@@ -14,6 +14,7 @@ class TaskTests {
 	
 	@Before
 	void setup() {
+		task.quest = new Quest(nqme:'q0')
 		mockForConstraintsTests(Task, [task])
 	}
 	
