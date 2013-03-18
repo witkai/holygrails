@@ -35,8 +35,8 @@ class Task {
 		name blank:false
 		priority range:MIN_PRIORITY..MAX_PRIORITY
 		startDate()
-    		endDate validator: { 
-			value, Task task -> value >= task.startDate
+    		endDate validator: { value, task -> 
+				value >= task.startDate
 		}
 		completed()
 	}
