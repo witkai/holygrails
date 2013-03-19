@@ -2,7 +2,7 @@ package cc
 
 class Quest {
 	
-	static hasMany = [tasks:Task]
+	static hasMany = [tasks:Task, knights:Knight]
 
 	static constraints = {
 		name blank:false
