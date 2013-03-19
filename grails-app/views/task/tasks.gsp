@@ -16,10 +16,12 @@
 			</ul>
 		</div>
 
+		<div style="padding:10px;">
 		<g:formRemote name="taskDetail" url="[action:'detail']" update="display">
 			<g:select name="id" from="${tasks}" optionKey="id" optionValue="name"/>
 			<input type="submit" value="Get Details"/>
 		</g:formRemote>
+		</div>
 		<div id="display"></div>
 
 	</body>

@@ -10,16 +10,16 @@ import org.junit.*
 class QuestTests {
 
 	Quest quest = new Quest(name:'q0')
-	
+
 	@Before
 	void setup() {
 		mockForConstraintsTests(Quest, [quest])
 	}
-	
-    void testValid() {
-       assert quest.validate()
-    }
-	
+
+	void testValid() {
+		assert quest.validate()
+	}
+
 	void testBlankName() {
 		quest.name = ''
 		assert !quest.validate()

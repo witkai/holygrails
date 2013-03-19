@@ -9,7 +9,7 @@ import org.junit.*
 @TestFor(SakilaService)
 class SakilaServiceTests {
 
-    void testSomething() {
-        fail "Implement me"
-    }
+	void testSomething() {
+		fail "Implement me"
+	}
 }

@@ -1,7 +1,5 @@
 package cc
 
-
-
 import grails.test.mixin.*
 import org.junit.*
 
@@ -11,7 +9,7 @@ import org.junit.*
 @TestFor(QuestController)
 class QuestControllerTests {
 
-    void testSomething() {
-       assert true
-    }
+	void testSomething() {
+		assert true
+	}
 }

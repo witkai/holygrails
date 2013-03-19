@@ -1,10 +1,7 @@
 package cc
 
-
-
 import grails.test.mixin.*
 import org.junit.*
-
 
 /**
  * See the API for {@link grails.test.mixin.services.ServiceUnitTestMixin} for usage instructions
@@ -12,7 +9,7 @@ import org.junit.*
 @TestFor(DatabaseService)
 class DatabaseServiceTests {
 
-    void testSomething() {
-        fail "Implement me"
-    }
+	void testSomething() {
+		fail "Implement me"
+	}
 }
