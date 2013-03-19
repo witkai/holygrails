@@ -3,8 +3,7 @@ import cc.*
 class BootStrap {
 	def geocoderService
 
-	def init = {
-		servletContext ->
+	def init = { servletContext ->
 		if (!Quest.findByName("Seek the grail")) {
 			Quest q1 = new Quest(name:"Seek the grail")
 			.addToTasks(name:"Buy horse", completed:true)
