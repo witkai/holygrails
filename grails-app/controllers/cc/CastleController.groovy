@@ -16,7 +16,10 @@ class CastleController {
 		int numPerPage = 5
         params.max = Math.min(max ?: 10, 100)
 		// return the map containing the list and the total number of castles
-        [castleInstanceList: Castle.list(params), castleInstanceTotal: Castle.count()]
+        [castleInstanceList: Castle.list(params), 
+			castleInstanceTotal: Castle.count(),
+			mapColumns: geocoderService.headers(), 
+			mapData: geocoderService.data()]
 		// -> views/castle/list.gsp
     }
 

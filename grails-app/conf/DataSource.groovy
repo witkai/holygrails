@@ -6,6 +6,14 @@ dataSource {
 	password = "kai"
 	//logSql = true
 }
+dataSource_sakila {
+	pooled = true
+	driverClassName = "com.mysql.jdbc.Driver"
+	dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
+	username = "kai"
+	password = "kai"
+	//logSql = true
+}
 hibernate {
 	format_sql = true
     cache.use_second_level_cache = true
