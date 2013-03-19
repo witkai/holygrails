@@ -32,7 +32,7 @@ environments {
     test {
         dataSource {
             dbCreate = "update"
-            url = "jdbc:h2:mem:testDb;MVCC=TRUE;LOCK_TIMEOUT=10000"
+            url = "jdbc:mysql://192.168.249.140:3306/holygrails"
         }
     }
     production {
