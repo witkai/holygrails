@@ -5,7 +5,11 @@ import grails.converters.XML
 
 class TaskController {
 	// true or Task both work, but true is safer
-    static scaffold = true
+    static scaffold = Task
+	
+	def time() {
+		render "The current time on the server is ${new Date()}."
+	}
 	
 	/**
 	 * List all tasks as XML: 
