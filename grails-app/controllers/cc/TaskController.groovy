@@ -7,6 +7,18 @@ class TaskController {
 	// true or Task both work, but true is safer
     static scaffold = Task
 	
+	def tasks() {
+		[tasks:Task.list()]
+	}
+	
+	def detail() {
+		render(template:"detail", bean:Task.get(params.id), var:"task")
+	}
+	
+	/**
+	 * Returns the time of the server
+	 * @return
+	 */
 	def time() {
 		render "The current time on the server is ${new Date()}."
 	}

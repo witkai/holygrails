@@ -1,0 +1,10 @@
+<table>
+	<tr>
+		<td>ID</td>
+		<td>${task.id}</td>
+	</tr>
+	<tr>
+		<td>Name</td>
+		<td>${task.name}</td>
+	</tr>
+</table>
