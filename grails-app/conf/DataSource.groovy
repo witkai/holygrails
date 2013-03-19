@@ -9,6 +9,7 @@ dataSource {
 dataSource_sakila {
 	pooled = true
 	driverClassName = "com.mysql.jdbc.Driver"
+    url = "jdbc:mysql://192.168.249.140:3306/sakila"
 	dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 	username = "kai"
 	password = "kai"

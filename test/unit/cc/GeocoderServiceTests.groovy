@@ -1,7 +1,5 @@
 package cc
 
-
-
 import grails.test.mixin.*
 import org.junit.*
 

@@ -3,9 +3,16 @@ package cc
 import grails.converters.JSON
 import grails.converters.XML
 
+
 class TaskController {
 	// true or Task both work, but true is safer
     static scaffold = Task
+	
+	def sakilaService
+	
+	def callFilmInStock() {
+		render(sakilaService.filmInStock(1,1))
+	}
 	
 	def tasks() {
 		[tasks:Task.list()]
