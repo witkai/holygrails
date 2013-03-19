@@ -4,7 +4,7 @@ dataSource {
 	dialect = "org.hibernate.dialect.MySQL5InnoDBDialect"
 	username = "kai"
 	password = "kai"
-	logSql = true
+	//logSql = true
 }
 hibernate {
 	format_sql = true
